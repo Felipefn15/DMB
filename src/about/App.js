@@ -201,7 +201,8 @@ const Mobile = (
 
 function App() {
     const [display, setDisplay] = useState(false);
-    const [width, setWidth] = useState(screen.width);
+    const [width, setWidth] = useState(window.innerWidth);
+    
     useEffect(() => {
         function handleResize() {
             setWidth(window.innerWidth);
